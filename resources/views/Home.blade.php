@@ -1,18 +1,23 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/app.css"> <!-- Conexion a Bootstrap y Otras dependencias (npm) Local con Node Js -->
-        <!-- Aqui Se puede Agregar Otros Archivos CSS path -> public/css -->
-        <title>Restaurant-Manager</title>
-    </head>
-    <body>
-        
-        <h1 class="mt-5 text-center modal-title"> Restaurant-Manager The Project </h1>
+@extends('layouts.template')
 
-		<script src="js/app.js"></script> <!-- Conexion a Bootstrap y otras dependencias (npm) Local con Node Js -->
+@section('content')
+		
+	<h2 class="text-center" id="Carta">Carta</h2>
 
-    </body>
-</html>
+   	<div id="inicio" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   	  <ul>
+   		@for ($i = 0; $i < 8; $i++)
+				<li id="Titulo" style="list-style:none">	
+						<img src="http://lorempixel.com/800/400/food?{{random_int(1,50)}}">
+						<a href="" data-toggle="modal"><p>TITULO</p></a>
+				</li>
+		@endfor
+	  </ul>
+	</div>
+	
+	<div class="row buen">
+		<p class="text-center text-info" id="Buen">Buen Provecho!</p>
+	</div>
+	
+	
+@endsection

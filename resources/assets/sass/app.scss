@@ -6,4 +6,8 @@
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap/scss/bootstrap.scss"
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+// Font-Awesome
+@import "node_modules/font-awesome/scss/font-awesome.scss";

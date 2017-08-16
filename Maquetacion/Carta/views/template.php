@@ -34,8 +34,6 @@
 
 		include "modules/orden.php";
 		/*====  Fin de CARTA  ====*/
-
-		
 	?>
 
 	<script src="js/scripts.js"></script>

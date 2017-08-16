@@ -8,7 +8,8 @@
 */
 
 
-Route::get('/','ControladorStaticPages@Home'); // Ruta default no lleva env('PREFIXER')
-Route::get(env('PREFIXER').'/Laravel','ControladorStaticPages@LaravelHome');
+Route::get('/','ControladorStaticPages@Home'); 
+Route::get('/Laravel','ControladorStaticPages@LaravelHome');
+
 
 
