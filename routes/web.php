@@ -1,16 +1,14 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
+*  Route::(get,post,resource)('RUTA' , 'Controlador')
+*  Controlador = ('NombreControlador@MetodoControlador')
+*  env('PREFIXER') = http://localhost/Restaurant-manager/public -> Path -> .env
+*  ControladorStaticPages -> path -> app/Http/ControladorStaticPages.php 
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/','ControladorStaticPages@Home'); // Ruta default no lleva env('PREFIXER')
+Route::get(env('PREFIXER').'/Laravel','ControladorStaticPages@LaravelHome');
+
+
