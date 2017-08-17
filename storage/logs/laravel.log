@@ -4468,6 +4468,7 @@ Stack trace:
 #48 C:\xampp\htdocs\Projects\Restaurant-Manager1\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #49 C:\xampp\htdocs\Projects\Restaurant-Manager1\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #50 {main}  
+<<<<<<< HEAD
 [2017-08-17 00:16:12] local.ERROR: ErrorException: Use of undefined constant app - assumed 'app' in C:\xampp\htdocs\Projects\Restaurant-Manager\storage\framework\views\a70492cc53649d54a91ca1fdd8383fb90998104f.php:7
 Stack trace:
 #0 C:\xampp\htdocs\Projects\Restaurant-Manager\storage\framework\views\a70492cc53649d54a91ca1fdd8383fb90998104f.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Use of undefine...', 'C:\\xampp\\htdocs...', 7, Array)
@@ -8394,3 +8395,7 @@ Stack trace:
 #48 C:\xampp\htdocs\Projects\Restaurant-Manager\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #49 C:\xampp\htdocs\Projects\Restaurant-Manager\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #50 {main}  
+=======
+[2017-08-17 00:11:26] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\projects\Restaurant-Manager\vendor\laravel\framework\src\Illuminate\Database\DatabaseServiceProvider.php:14
+Stack trace:
+#0 {main}  
