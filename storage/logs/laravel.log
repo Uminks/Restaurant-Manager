@@ -4468,3 +4468,6 @@ Stack trace:
 #48 C:\xampp\htdocs\Projects\Restaurant-Manager1\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #49 C:\xampp\htdocs\Projects\Restaurant-Manager1\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #50 {main}  
+[2017-08-17 00:11:26] local.ERROR: Symfony\Component\Debug\Exception\FatalErrorException: Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\projects\Restaurant-Manager\vendor\laravel\framework\src\Illuminate\Database\DatabaseServiceProvider.php:14
+Stack trace:
+#0 {main}  
