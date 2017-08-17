@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="css/app.css"> <!-- Conexion a Bootstrap y Otras dependencias (npm) Local con Node Js -->
         <!-- Aqui Se puede Agregar Otros Archivos CSS path -> public/css -->
         <link rel="stylesheet" href="css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Handlee|Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Handlee|Dancing+Script|Cantarell|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/cocina.css">
         <title>Restaurant-Manager</title>
     </head>
     <body>

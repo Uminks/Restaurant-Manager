@@ -72,6 +72,7 @@ CARTA
 =============================================*/
 
 #carta ul li{
+	list-style: none;
 	position:relative;
 	padding:20px;
 }

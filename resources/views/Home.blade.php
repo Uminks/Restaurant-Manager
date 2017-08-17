@@ -9,7 +9,7 @@
    		@for ($i = 0; $i < 8; $i++)
 				<li id="Titulo" style="list-style:none">	
 						<img src="http://lorempixel.com/800/400/food?{{random_int(1,50)}}">
-						<a href="" data-toggle="modal"><p>TITULO</p></a>
+						<a href="#cartaTitulo" data-toggle="modal"><p>TITULO</p></a>
 				</li>
 		@endfor
 	  </ul>
@@ -19,5 +19,9 @@
 		<p class="text-center text-info" id="Buen">Buen Provecho!</p>
 	</div>
 	
-	
+    @include('layouts.secciones.cartaEmergente');
+    @include('layouts.secciones.orden');
+
 @endsection
+
+	
