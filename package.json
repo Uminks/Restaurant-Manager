@@ -19,6 +19,6 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    "font-awesome": "github:FortAwesome/Font-Awesome"
+    "font-awesome": "github:FontAwesome/Font-Awesome"
   }
 }
