@@ -9,7 +9,7 @@ PIE DE PAGINA
 		</li>
 		<li>
     		<a href="http://www.facebook.com" target="_blank">
-      		<i class="fa fa-lock" style="font-size:24px;"></i>  
+      		<i class="fa fa-facebook" style="font-size:24px;"></i>  
    		 	</a>
 		</li>
 
@@ -26,7 +26,7 @@ PIE DE PAGINA
 		</li>
 
 		<li>
-    		<a href="http://www.github.com/BBMO" target="_blank">
+    		<a href="https://github.com/Uminks" target="_blank">
       		<i class="fa fa-github" style="font-size:24px;"></i>  
     		</a>
 		</li>

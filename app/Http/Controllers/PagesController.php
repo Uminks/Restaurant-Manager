@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-   // Controlador libre
+   public function Cocina(){
+   		return view('cocina.cocina');
+   }
 }

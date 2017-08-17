@@ -13,3 +13,7 @@ Route::get('/Laravel','ControladorStaticPages@LaravelHome');
 
 
 
+
+
+Route::get('/Cocina','PagesController@Cocina');
+

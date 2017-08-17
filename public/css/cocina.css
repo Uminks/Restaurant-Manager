@@ -1,0 +1,37 @@
+#Cocina-Enviar{
+	font-size: 2em;
+	color:#4AD215;
+}
+
+#Cocina-Enviar:hover{
+	color:white;
+	border-radius: 5px;
+	background:#4AD215;
+}
+
+.table-hover:hover{
+	background: #F5E1DB;
+
+}
+
+#Titulos_Tabla th{
+	color:black;
+	font-family: Cantarell;
+	font-size:1.2em;
+	text-align: center;
+}
+
+.table-hover{
+	font-family: Montserrat;
+	font-size: 1.2em;
+}
+
+#CocinaTitle{
+	font-family: Handlee;
+	font-size: 5em;
+}
+
+#CocinaFoot{
+	font-family: Dancing Script;
+	font-size: 5em;
+}
