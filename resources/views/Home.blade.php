@@ -14,14 +14,24 @@
 		@endfor
 	  </ul>
 	</div>
-	
+
+
+	<div class="flotante">
+		<a style="font-family:Montserrat" href="#verOrden" data-toggle="modal"><button  id="tam" type="button" class="btn btn-warning"><span class="fa fa-cutlery"></span> Ver Orden</button></a>
+	</div>
+     
+    
+
 	<div class="row buen">
 		<p class="text-center text-info" id="Buen">Buen Provecho!</p>
+		@include('layouts.secciones.cartaEmergente')
+    	@include('layouts.secciones.orden')
 	</div>
 	
-    @include('layouts.secciones.cartaEmergente');
-    @include('layouts.secciones.orden');
-
 @endsection
 
-	
+
+@section('emergente')
+		@include('layouts.secciones.cartaEmergente')
+    	@include('layouts.secciones.orden')
+@endsection

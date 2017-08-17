@@ -17,8 +17,9 @@
             
             <div class="container-fluid" id="container">
                      <?php echo $__env->yieldContent('content'); ?>
+                     <?php echo $__env->yieldContent('emergente'); ?> <!-- yield Optional -->
             </div>
-
+            
             <?php echo $__env->make('layouts.secciones.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> <!-- Path -> resources/views/layouts/secciones/footer.blade.php -->
         
         

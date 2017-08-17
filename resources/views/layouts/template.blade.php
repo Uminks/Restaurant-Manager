@@ -17,8 +17,9 @@
             
             <div class="container-fluid" id="container">
                      @yield('content')
+                     @yield('emergente') <!-- yield Optional -->
             </div>
-
+            
             @include('layouts.secciones.footer') <!-- Path -> resources/views/layouts/secciones/footer.blade.php -->
         
         
