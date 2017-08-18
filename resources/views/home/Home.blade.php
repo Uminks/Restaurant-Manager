@@ -24,14 +24,14 @@
 
 	<div class="row buen">
 		<p class="text-center text-info" id="Buen">Buen Provecho!</p>
-		@include('layouts.secciones.cartaEmergente')
-    	@include('layouts.secciones.orden')
+		@include('home.secciones.cartaEmergente')
+    	@include('home.secciones.orden')
 	</div>
 	
 @endsection
 
 
 @section('emergente')
-		@include('layouts.secciones.cartaEmergente')
-    	@include('layouts.secciones.orden')
+		@include('home.secciones.cartaEmergente')
+    	@include('home.secciones.orden')
 @endsection

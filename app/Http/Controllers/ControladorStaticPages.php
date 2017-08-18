@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ControladorStaticPages extends Controller
 {
     public function Home(){
-		return view('Home'); // Retorna Vista Home -> path -> resources/views/Home.blade.php
+		return view('home.Home'); // Retorna Vista Home -> path -> resources/views/Home.blade.php
 	}
 
 	public function LaravelHome(){

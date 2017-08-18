@@ -12,8 +12,5 @@ Route::get('/','ControladorStaticPages@Home');
 Route::get('/Laravel','ControladorStaticPages@LaravelHome');
 
 
-
-
-
 Route::get('/Cocina','PagesController@Cocina');
-
+Route::get('/Administrador','PagesController@Administrador');

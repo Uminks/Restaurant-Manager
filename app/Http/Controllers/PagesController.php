@@ -9,4 +9,8 @@ class PagesController extends Controller
    public function Cocina(){
    		return view('cocina.cocina');
    }
+
+   public function Administrador(){
+   		return view('administrador.administrador');
+   }
 }
