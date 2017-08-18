@@ -99,31 +99,46 @@ CARTA
 PIE DE PAGINA     
 ======================================*/
 
-#piePagina ol li a{
+
+#piePagina #links ol li a{
 	float:right;
 	width:50px;
 	height:50px;
 	border-radius:100%;
 	margin:20px 5px;
 	text-align:center;
-	line-height:52px;
+	line-height:60px;
 	color:#e67e22;
 	background:white;
+}
+
+#right {
+	width:20em;
 }
 
 #piePagina{
 	width: 100%;
 	margin-top: 15px; 
 	background: #e67e22;
-	padding: 10px 20px;
+	padding: 3px 8px;
 	text-align: center;
+	display:flex;
+	justify-content: space-between;
 }
 
-#piePagina ol li h1{
+#piePagina #list li h1{
 	color: #FFFFFF;
 	font-style: italic;
 	float:left;
 }
+
+#creators p {
+	font-family: Montserrat;
+	font-weight: Semi-Bold;
+	color:black;
+	font-size:1.2em;
+}
+
 /*=====  Fin de PIE DE PAGINA   ======*/
 
 /*=============================================
