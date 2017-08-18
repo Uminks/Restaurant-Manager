@@ -242,7 +242,7 @@ Tablets
 Phones
 **********************************************/
 	
-@media (max-width:767px){
+@media (max-width:647px){
 
 	#container{
 		margin-left: 0em;
@@ -273,14 +273,18 @@ Phones
 
 	#piePagina #links ol li a{
 	float:right;
-	width:41px;
-	height:41px;
+	width:35px;
+	height:35px;
 	border-radius:100%;
 	text-align:center;
 	line-height:60px;
 	color:#e67e22;
 	background:white;
-}
+	}
+
+	#right {
+		width:21em;
+	}
 
 }
 

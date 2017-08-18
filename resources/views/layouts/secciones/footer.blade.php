@@ -45,7 +45,7 @@ PIE DE PAGINA
 		<br>
 		<br>
 		<div id="creators" class="text-center">
-			<p>  Elaborado Por: <br> </p> <a href="https://github.com/BBMO">Brayan Montañez</a> <br> <a href="https://github.com/DevelTwist">Luis Vargas</a>
+			<p style="text-center">  <br> Elaborado Por: <br> </p> <a href="https://github.com/BBMO">Brayan Montañez</a> <br> <a href="https://github.com/DevelTwist">Luis Vargas</a>
 		</div>
 	</div>
 
