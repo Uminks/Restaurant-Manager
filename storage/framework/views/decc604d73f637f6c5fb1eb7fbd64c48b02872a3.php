@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css?family=Handlee|Dancing+Script|Cantarell|Montserrat" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/cocina.css">
         <link rel="stylesheet" type="text/css" href="css/administrador.css">
+         
+
         <title>Restaurant-Manager</title>
     </head>
     <body>

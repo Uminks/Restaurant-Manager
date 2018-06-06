@@ -1,9 +1,34 @@
-#AdminTitle{
+#adminTitle{
 	font-family: Handlee;
 	font-size: 5em;
 }
 
-#AdminFoot{
+#adminFoot{
 	font-family: Dancing Script;
 	font-size: 5em;
 }
+
+.contenedorAgregar{
+	display: flex;
+	width: 100%;
+	height: 200px;
+	padding: 20px 0 20px 0;
+	border: 2px dashed gray;
+	justify-content: center;
+	align-items: middle;
+}
+
+.btnAgregar{
+	background: white;
+}
+
+
+.btnAgregar:focus ~ .ingresoTipo {
+	display: block;
+}
+
+.ingresoTipo{
+	display: none;
+	width: 80%;
+}
+
