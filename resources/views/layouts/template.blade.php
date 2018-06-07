@@ -8,6 +8,7 @@
         <!-- Aqui Se puede Agregar Otros Archivos CSS path -> public/css -->
         <link rel="stylesheet" href="css/home.css">
         <link href="https://fonts.googleapis.com/css?family=Handlee|Dancing+Script|Cantarell|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/cocina.css">
         <link rel="stylesheet" type="text/css" href="css/administrador.css">
          

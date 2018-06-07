@@ -15,7 +15,7 @@
 
 
 	<div class="flotante">
-		<a style="font-family:Montserrat" href="#verOrden" data-toggle="modal"><button  id="tam" type="button" class="btn btn-warning"><span class="fa fa-cutlery"></span> Ver Orden</button></a>
+		<a style="font-family:Montserrat" href="#verOrden" data-toggle="modal"><button  id="tam" type="button" class="btn btn-warning"><span class="fas fa-utensils"></span> Ver Orden</button></a>
 	</div>
      
     
