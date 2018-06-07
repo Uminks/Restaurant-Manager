@@ -2,7 +2,8 @@
 
 
 @section('content')
-
+	<div id="appAdministrador"></div>
+	
 		<h2 class="text-center" id="adminTitle">Administrador</h2>
 	
 		<div class="contenedorAgregar">
@@ -14,5 +15,4 @@
 		</div>
 
 		<h2 class="text-center" id="adminFoot">Gracias por usar nuestros servicios!</h2>
-		
 @endsection

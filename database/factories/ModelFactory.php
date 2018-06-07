@@ -22,3 +22,14 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Menu::class, function(Faker\Generator $faker) {
+
+	return [	
+        'created_at' => $faker->dateTimeThisDecade,
+        'updated_at' => $faker->dateTimeThisDecade,
+		'titulo' => $faker->realText(random_int(10, 30)),
+		'image' => $faker->imageUrl(600, 338),
+	];
+
+});

@@ -1,4 +1,11 @@
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import AppAdministrador from './components/Administrador/containers/AppAdministrador';
+
 require('./bootstrap');
  
-/* Import the Main component */
-import App from './components/App';
+
+let appAdministrador = document.getElementById('appAdministrador');
+if (appAdministrador) {
+    render(<AppAdministrador />, appAdministrador);
+}
