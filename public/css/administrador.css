@@ -23,12 +23,9 @@
 }
 
 
-.btnAgregar:focus ~ .ingresoTipo {
-	display: block;
-}
 
 .ingresoTipo{
-	display: none;
+	display: block;
 	width: 80%;
 }
 

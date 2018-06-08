@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListaTipos from '../../lista-tipos/containers/ListaTipos';
 
 class AppAdministrador extends Component {
 
@@ -9,40 +10,29 @@ class AppAdministrador extends Component {
 		}
 	}
 
+	//Extrae todos los datos de la DB
 	componentDidMount(){
-		axios.get('/api/')
+		fetch('/api/')
+			.then(response => {
+				return response.json()
+			})
 			.then(menus => {
-				console.log(menus.data);
-				this.setState({ menus: menus.data })
+				this.setState({ menus })
 			})
 	}
 
 
-	//Hay que Modularizar como componente
-	renderProducts(){
-		return this.state.menus.map(menu => {
-			return (
-				<li key={menu.id}>
-					{menu.titulo}
-					<img src={menu.image}/>
-				</li>
-			);
-		})
-	}
-	//
 
     render() {
         return (
-            <div>
-                <ul>
-					{this.renderProducts()}
-                </ul>
-            </div>
+        	<div>
+        		<ListaTipos lista={this.state.menus}/>
+        	</div>
         );
     }
 }
  
 export default AppAdministrador;
- 
+
 
  
