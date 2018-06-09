@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-06-2018 a las 21:56:19
+-- Tiempo de generación: 09-06-2018 a las 22:17:52
 -- Versión del servidor: 10.1.24-MariaDB
 -- Versión de PHP: 7.1.6
 
@@ -52,7 +52,8 @@ INSERT INTO `menus` (`id`, `created_at`, `updated_at`, `titulo`, `image`) VALUES
 (9, '2008-09-29 14:19:14', '2008-11-25 05:33:37', 'King. \'Then.', 'http://lorempixel.com/600/338/?72653'),
 (10, '2014-10-22 04:17:44', '2012-09-09 22:45:05', 'Oh, I shouldn\'t.', 'http://lorempixel.com/600/338/?19962'),
 (11, '2018-06-09 23:55:19', '2018-06-09 23:55:19', 'Por FINNNNNNN!', 'http://lorempixel.com/600/338/152?77941'),
-(12, '2018-06-09 23:55:52', '2018-06-09 23:55:52', 'Fucking javascript y sus promesas de mierda', 'http://lorempixel.com/600/338/152?77941');
+(12, '2018-06-09 23:55:52', '2018-06-09 23:55:52', 'Fucking javascript y sus promesas de mierda', 'http://lorempixel.com/600/338/152?77941'),
+(13, '2018-06-10 00:17:05', '2018-06-10 00:17:05', 'Fino fino', 'http://lorempixel.com/600/338/152?77941');
 
 -- --------------------------------------------------------
 
@@ -141,7 +142,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT de la tabla `migrations`
 --
