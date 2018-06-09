@@ -11,4 +11,12 @@ class AdministradorController extends Controller
     public function index(){
     	return Menu::all();
     }
+
+    public function crearTipo(Request $request){
+
+    	$tipo = Menu::create($request->all());
+
+    	return response()->json($tipo, 201);
+    }
+
 }
