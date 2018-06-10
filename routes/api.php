@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/', 'AdministradorController@index');
 Route::post('/', 'AdministradorController@crearTipo');
+Route::delete('/eliminar/{tipo}', 'AdministradorController@eliminarTipo');

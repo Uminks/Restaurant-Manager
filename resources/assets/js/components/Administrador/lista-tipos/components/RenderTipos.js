@@ -1,22 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
-function RenderTipos(props) {
-	return(
-		<div id="inicio" className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <ul>
-            {
-				props.lista.map((menu) => {
-					return(
-						<li key={menu.id} id="Titulo" className="noStyle">
-							<img src={menu.image} alt="Imagen"/>
-							<a href="#cartaTitulo" data-toggle="modal"><p>{menu.titulo}</p></a>
-						</li>
-					)
-				})
-			}						
-            </ul>
-        </div>
-    )
+class RenderTipos extends Component {
+	
+	constructor(props){
+		super(props);
+	}
+
+	handleClick(e){
+		this.props.handleDelete(this.props);
+	}
+
+	render(){
+
+		var estilosAuxiliares = {
+			fontSize: 20
+		}
+
+		return(
+			<li id="Titulo" className="noStyle">
+				<img src={this.props.image} alt="Imagen"/>
+				<a href="#cartaTitulo" data-toggle="modal"><p>{this.props.titulo}</p></a>
+				<button className="pull-right btn btn-danger" onClick={this.handleClick.bind(this)}>
+					<i className="far fa-trash-alt" style={estilosAuxiliares}></i>
+				</button>
+			</li>
+		)
+	}
 		
 }
 

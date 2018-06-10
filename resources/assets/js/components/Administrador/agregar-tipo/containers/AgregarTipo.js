@@ -8,7 +8,7 @@ class AgregarTipo extends Component {
 		this.state = {
 			nuevoTipo: {
 				titulo: '',
-				image: 'http://lorempixel.com/600/338/152?77941',
+				image: 'image/plato.jpg',
 			}
 		}
 
@@ -25,6 +25,7 @@ class AgregarTipo extends Component {
 	handleSubmit(e){
 		e.preventDefault();
 		this.props.onAdd(this.state.nuevoTipo);
+		document.getElementById("titulo").value="";
 	}
 
 
@@ -34,7 +35,7 @@ class AgregarTipo extends Component {
 	        	<div className="ingresoTipo">
 
 	        		<form onSubmit={this.handleSubmit}>
-						<input type="text" className="form-control"  placeholder="Título" onChange={(e)=>this.handleInput('titulo', e)}/> 
+						<input id="titulo" type="text" className="form-control"  placeholder="Título" onChange={(e)=>this.handleInput('titulo', e)}/> 
 						<input type="file" className="file"/>
 
 						<input type="submit" className="guardarTipo btn btn-info pull-right" value="Guardar"/> 

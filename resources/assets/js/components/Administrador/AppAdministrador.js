@@ -24,6 +24,7 @@ class AppAdministrador extends Component {
 			})
 	}
 
+	//Agrega datos a la DB
 	handleAddTipo(tipo){
 		fetch('/api/', {
 			method: 'POST',
@@ -47,12 +48,22 @@ class AppAdministrador extends Component {
 			})
 	}
 
+	//Eliminar datos de la db
+	handleDelete(tipo){
+		fetch('/api/eliminar/'+tipo.id, {
+			method: 'DELETE',
+		})
+			.then(response => {
+				this.componentDidMount();
+			})
+	}
+
 
 
     render() {
         return (
         	<div>
-        		<ListaTipos lista={this.state.menus}/>
+        		<ListaTipos lista={this.state.menus} handleDelete={this.handleDelete.bind(this)}/>
         		<AgregarTipo onAdd={this.handleAddTipo}/>
         	</div>
         );

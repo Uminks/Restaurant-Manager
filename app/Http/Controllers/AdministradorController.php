@@ -19,4 +19,11 @@ class AdministradorController extends Controller
     	return response()->json($tipo, 201);
     }
 
+    public function eliminarTipo(Menu $tipo){
+    	
+    	$tipo->delete();
+
+    	return response()->json(null, 204);
+    }
+
 }

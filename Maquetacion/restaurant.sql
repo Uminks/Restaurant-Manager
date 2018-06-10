@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-06-2018 a las 19:05:18
+-- Tiempo de generación: 10-06-2018 a las 23:34:36
 -- Versión del servidor: 10.1.24-MariaDB
 -- Versión de PHP: 7.1.6
 
@@ -42,11 +42,11 @@ CREATE TABLE `menus` (
 
 INSERT INTO `menus` (`id`, `created_at`, `updated_at`, `titulo`, `image`) VALUES
 (11, '2018-06-10 04:20:21', '2018-06-10 04:20:21', 'Titulo 1', 'image/plato.jpg'),
-(12, '2018-06-10 04:20:25', '2018-06-10 04:20:25', 'Titulo 2', 'image/plato.jpg'),
 (13, '2018-06-10 04:20:28', '2018-06-10 04:20:28', 'Titulo 3', 'image/plato.jpg'),
 (14, '2018-06-10 04:20:31', '2018-06-10 04:20:31', 'Titulo 4', 'image/plato.jpg'),
-(15, '2018-06-10 04:20:36', '2018-06-10 04:20:36', 'Titulo 5', 'image/plato.jpg'),
-(16, '2018-06-10 04:20:39', '2018-06-10 04:20:39', 'Titulo 6', 'image/plato.jpg');
+(47, '2018-06-11 01:33:07', '2018-06-11 01:33:07', 'Venezuela', 'image/plato.jpg'),
+(48, '2018-06-11 01:33:16', '2018-06-11 01:33:16', 'Hola como estas', 'image/plato.jpg'),
+(49, '2018-06-11 01:33:26', '2018-06-11 01:33:26', 'How are you?', 'image/plato.jpg');
 
 -- --------------------------------------------------------
 
@@ -135,7 +135,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 --
 -- AUTO_INCREMENT de la tabla `migrations`
 --

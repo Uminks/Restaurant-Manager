@@ -1,4 +1,4 @@
-.flotante {
+.flotante {no
    position: fixed;
    display: inline-block;
    bottom:2em;
@@ -63,7 +63,7 @@ INICIO
 =============================================*/
 
 #inicio ul li{
-	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 #inicio ul li p{

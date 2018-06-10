@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import RenderTipos from '../components/RenderTipos';
 
-class ListaTipos extends Component {
+function ListaTipos(props) {
 
-	constructor(props){
-		super(props);
-	}
-
-	//Aqui va los Metodos y logica para agregar platos a los tipos
-
-    render() {
-        return (
-        	<RenderTipos lista={this.props.lista} />              	    
-        );
-    }
+    return (
+    	<div id="inicio" className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <ul>
+            {
+				props.lista.map((menu) => {
+					return(
+						<RenderTipos 
+							{...menu}
+							key={menu.id}
+							handleDelete = {props.handleDelete}
+						/>
+					)
+				})
+			}						
+            </ul>
+        </div>          	    
+    );
 }
  
 export default ListaTipos;
