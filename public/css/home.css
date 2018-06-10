@@ -31,6 +31,10 @@ a:visited, a:link, a:focus, a:hover, a:active{
 	color: white;
 }
 
+.noStyle{
+	list-style:none;
+}
+
 /*=============================================
 CABEZOTE           
 =============================================*/

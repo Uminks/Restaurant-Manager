@@ -1,40 +1,21 @@
 <?php $__env->startSection('content'); ?>
+		<h2 class="text-center" id="adminTitle">Administrador</h2>
 		
-		<h2 class="text-center" id="AdminTitle">Administrador</h2>
-
-		<div class="container">
+		<div id="appAdministrador"></div>
+	
+		<!--div class="contenedorAgregar">
 			
-			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			
-			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button id="btnAgregar" class="btn btnAgregar"><i class="fas fa-plus-circle" style="font-size:40px;"></i> </button>
 
-			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="ingresoTipo"> 
+				<input type="text" class="form-control"  placeholder="Título"> 
+				<input type="file" class="file">
 
-			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								
-		</div>
+				<button class="guardarTipo btn btn-info pull-right" style="margin:10px">Guardar</button> 
+			</div>
 
-		<h2 class="text-center" id="AdminFoot">Gracias por usar nuestros servicios!</h2>
-		
+		</div-->
+
+		<h2 class="text-center" id="adminFoot">Gracias por usar nuestros servicios!</h2>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

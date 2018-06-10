@@ -19,25 +19,25 @@ PIE DE PAGINA
 		<ol style="list-style: none">
 				<li>
 		    		<a href="http://www.facebook.com" target="_blank">
-		      		<i class="fa fa-facebook" style="font-size:30px;"></i>  
+		      		<i class="fab fa-facebook" style="font-size:30px;"></i>  
 		   		 	</a>
 				</li>
 
 				<li>
 		    		<a href="http://www.twitter.com" target="_blank">  
-		      		<i class="fa fa-twitter" style="font-size:30px;"></i>  
+		      		<i class="fab fa-twitter" style="font-size:30px;"></i>  
 		   			</a>
 				</li>
 
 				<li>
 		    		<a href="http://www.instagram.com" target="_blank">
-		      		<i class="fa fa-instagram" style="font-size:30px;"></i>  
+		      		<i class="fab fa-instagram" style="font-size:30px;"></i>  
 		    		</a>
 				</li>
 
 				<li>
 		    		<a href="https://github.com/Uminks" target="_blank">
-		      		<i class="fa fa-github" style="font-size:30px;"></i>  
+		      		<i class="fab fa-github" style="font-size:30px;"></i>  
 		    		</a>
 				</li>
 		</ol>

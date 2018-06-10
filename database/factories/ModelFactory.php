@@ -28,8 +28,8 @@ $factory->define(App\Menu::class, function(Faker\Generator $faker) {
 	return [	
         'created_at' => $faker->dateTimeThisDecade,
         'updated_at' => $faker->dateTimeThisDecade,
-		'titulo' => $faker->realText(random_int(10, 30)),
-		'image' => $faker->imageUrl(600, 338),
+		'titulo' => $faker->realText(random_int(10, 20)),
+		'image' => $faker->imageUrl("image/plato.jpg"),
 	];
 
 });
