@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.8.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-06-2018 a las 23:34:36
--- Versión del servidor: 10.1.24-MariaDB
--- Versión de PHP: 7.1.6
+-- Tiempo de generación: 11-06-2018 a las 04:48:42
+-- Versión del servidor: 10.1.32-MariaDB
+-- Versión de PHP: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -41,12 +41,10 @@ CREATE TABLE `menus` (
 --
 
 INSERT INTO `menus` (`id`, `created_at`, `updated_at`, `titulo`, `image`) VALUES
-(11, '2018-06-10 04:20:21', '2018-06-10 04:20:21', 'Titulo 1', 'image/plato.jpg'),
-(13, '2018-06-10 04:20:28', '2018-06-10 04:20:28', 'Titulo 3', 'image/plato.jpg'),
-(14, '2018-06-10 04:20:31', '2018-06-10 04:20:31', 'Titulo 4', 'image/plato.jpg'),
 (47, '2018-06-11 01:33:07', '2018-06-11 01:33:07', 'Venezuela', 'image/plato.jpg'),
-(48, '2018-06-11 01:33:16', '2018-06-11 01:33:16', 'Hola como estas', 'image/plato.jpg'),
-(49, '2018-06-11 01:33:26', '2018-06-11 01:33:26', 'How are you?', 'image/plato.jpg');
+(49, '2018-06-11 01:33:26', '2018-06-11 01:33:26', 'How are you?', 'image/plato.jpg'),
+(50, '2018-06-11 06:43:18', '2018-06-11 06:43:18', 'Agregado a home', 'image/plato.jpg'),
+(51, '2018-06-11 06:46:37', '2018-06-11 06:46:37', 'Listo estuvo easy', 'image/plato.jpg');
 
 -- --------------------------------------------------------
 
@@ -135,17 +133,20 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `menus`
 --
 ALTER TABLE `menus`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+
 --
 -- AUTO_INCREMENT de la tabla `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;COMMIT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

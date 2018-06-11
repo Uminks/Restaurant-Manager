@@ -11,6 +11,7 @@ class AppAdministrador extends Component {
 		}
 
 		this.handleAddTipo = this.handleAddTipo.bind(this);
+		this.handleDelete = this.handleDelete.bind(this);
 	}
 
 	//Extrae todos los datos de la DB
@@ -63,7 +64,7 @@ class AppAdministrador extends Component {
     render() {
         return (
         	<div>
-        		<ListaTipos lista={this.state.menus} handleDelete={this.handleDelete.bind(this)}/>
+        		<ListaTipos lista={this.state.menus} handleDelete={this.handleDelete}/>
         		<AgregarTipo onAdd={this.handleAddTipo}/>
         	</div>
         );

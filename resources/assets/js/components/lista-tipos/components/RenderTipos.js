@@ -21,9 +21,15 @@ class RenderTipos extends Component {
 			<li id="Titulo" className="noStyle">
 				<img src={this.props.image} alt="Imagen"/>
 				<a href="#cartaTitulo" data-toggle="modal"><p>{this.props.titulo}</p></a>
-				<button className="pull-right btn btn-danger" onClick={this.handleClick.bind(this)}>
-					<i className="far fa-trash-alt" style={estilosAuxiliares}></i>
-				</button>
+
+				{this.props.handleDelete &&
+
+					<button className="pull-right btn btn-danger" onClick={this.handleClick.bind(this)}>
+						<i className="far fa-trash-alt" style={estilosAuxiliares}></i>
+					</button>
+
+				}
+
 			</li>
 		)
 	}
