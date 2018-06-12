@@ -7,7 +7,10 @@ class AppHome extends Component {
 		super();
 		this.state = {
 			menus: [],
+			platos: [],
 		}
+		
+		this.handleShowPlatos = this.handleShowPlatos.bind(this);
 	}
 
 	//Extrae todos los datos de la DB
@@ -17,7 +20,18 @@ class AppHome extends Component {
 				return response.json()
 			})
 			.then(menus => {
-				this.setState({ menus })
+				this.setState({ menus: menus })
+			})
+	}
+
+	//Peticion mostrar platos 
+	handleShowPlatos(tipo){
+		fetch('/api/'+tipo.id)
+			.then(response => {
+				return response.json()
+			})
+			.then(platos => {
+				this.setState({ platos: platos })
 			})
 	}
 
@@ -25,7 +39,11 @@ class AppHome extends Component {
     render() {
         return (
         	<div>
-        		<ListaTipos lista={this.state.menus} />
+        		<ListaTipos 
+        			lista={this.state.menus}
+        			handleShowPlatos={this.handleShowPlatos} 
+        			platos={this.state.platos}
+				/>
         	</div>
         );
     }

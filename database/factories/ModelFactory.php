@@ -40,7 +40,7 @@ $factory->define(App\Plato::class, function(Faker\Generator $faker) {
         'titulo' => $faker->realText(random_int(10, 20)),
         'descripcion' => $faker->realText(random_int(20, 160)),
         'precio' => 10,
-        'imagen' => $faker->imageUrl("image/plato.jpg"),
+        'imagen' => "image/plato.jpg",
     ];
 
 });

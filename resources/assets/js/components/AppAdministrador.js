@@ -8,24 +8,26 @@ class AppAdministrador extends Component {
 		super();
 		this.state = {
 			menus: [],
+			platos: [],
 		}
 
 		this.handleAddTipo = this.handleAddTipo.bind(this);
 		this.handleDelete = this.handleDelete.bind(this);
+		this.handleShowPlatos = this.handleShowPlatos.bind(this);
 	}
 
-	//Extrae todos los datos de la DB
+	//Extrae todos los tipos de la DB
 	componentDidMount(){
 		fetch('/api/')
 			.then(response => {
 				return response.json()
 			})
 			.then(menus => {
-				this.setState({ menus })
+				this.setState({ menus: menus })
 			})
 	}
 
-	//Agrega datos a la DB
+	//Agrega datos a los tipos a la DB
 	handleAddTipo(tipo){
 		fetch('/api/', {
 			method: 'POST',
@@ -49,7 +51,7 @@ class AppAdministrador extends Component {
 			})
 	}
 
-	//Eliminar datos de la db
+	//Eliminar datos de tipo y toda su casacada de platos de la db
 	handleDelete(tipo){
 		fetch('/api/eliminar/'+tipo.id, {
 			method: 'DELETE',
@@ -59,12 +61,28 @@ class AppAdministrador extends Component {
 			})
 	}
 
+	//Peticion mostrar platos 
+	handleShowPlatos(tipo){
+		fetch('/api/'+tipo.id)
+			.then(response => {
+				return response.json()
+			})
+			.then(platos => {
+				this.setState({ platos: platos })
+			})
+	}
+
 
 
     render() {
         return (
         	<div>
-        		<ListaTipos lista={this.state.menus} handleDelete={this.handleDelete}/>
+        		<ListaTipos 
+        			lista={this.state.menus}
+        			handleDelete={this.handleDelete}
+        			handleShowPlatos={this.handleShowPlatos}
+        			platos={this.state.platos}
+        		/>
         		<AgregarTipo onAdd={this.handleAddTipo}/>
         	</div>
         );

@@ -11,16 +11,20 @@ class RenderTipos extends Component {
 		this.props.handleDelete(this.props);
 	}
 
+	handleShow(e){
+		this.props.handleShowPlatos(this.props);
+	}
+
 	render(){
 
-		var estilosAuxiliares = {
+		let estilosAuxiliares = {
 			fontSize: 20
 		}
 
 		return(
 			<li id="Titulo" className="noStyle">
 				<img src={this.props.image} alt="Imagen"/>
-				<a href="#cartaTitulo" data-toggle="modal"><p>{this.props.titulo}</p></a>
+				<a href="#cartaTitulo" data-toggle="modal" onClick={this.handleShow.bind(this)}><p>{this.props.titulo}</p></a>
 
 				{this.props.handleDelete &&
 
