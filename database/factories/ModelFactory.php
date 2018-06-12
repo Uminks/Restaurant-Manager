@@ -29,7 +29,18 @@ $factory->define(App\Menu::class, function(Faker\Generator $faker) {
         'created_at' => $faker->dateTimeThisDecade,
         'updated_at' => $faker->dateTimeThisDecade,
 		'titulo' => $faker->realText(random_int(10, 20)),
-		'image' => $faker->imageUrl("image/plato.jpg"),
+		'image' => "image/plato.jpg",
 	];
+
+});
+
+$factory->define(App\Plato::class, function(Faker\Generator $faker) {
+
+    return [      
+        'titulo' => $faker->realText(random_int(10, 20)),
+        'descripcion' => $faker->realText(random_int(20, 160)),
+        'precio' => 10,
+        'imagen' => $faker->imageUrl("image/plato.jpg"),
+    ];
 
 });

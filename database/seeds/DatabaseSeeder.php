@@ -12,6 +12,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        $menu = factory(App\Menu::class, 10)->create();
+        $menu = factory(App\Menu::class, 5)->create();
+
+        $menu->each(function(App\Menu $tipo){
+
+            $platos = factory(App\Plato::class)
+               ->times(5)
+               ->create(['menu_id' => $tipo->id,]);
+
+         });
     }
 }
